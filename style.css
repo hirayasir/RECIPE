@@ -1,0 +1,808 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding:0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of reset */
+
+/*Screen sizes code by Hira Yasir*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 414px;
+    z-index: -1;
+}
+
+
+
+h1, h2, h3, nav a, nav span, figcaption, menu li, #nav a li, footer {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a,
+nav span,
+figcaption,
+menu li,
+#social li,
+footer {
+    font-size: 20px;
+}
+
+p,
+dd,
+dt,
+li,
+nav,
+input {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+
+main {
+    width: inherit;
+    margin-top: 150px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Mobile Screens*/
+
+@media only screen and (max-width: 414px) {
+  
+}
+
+h1 {
+      padding: 10px;
+}
+
+menu, nav, ul {
+    list-style: none;
+}
+
+menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+menu a {
+    color: #EB5428;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 5px;
+    border: solid 1px transparent;
+    padding: 5px;
+}
+
+menu a:hover {
+    border: solid 1px #EB5428;
+}
+
+#tacos img {
+    width: 100%;
+}
+
+#tacos p {
+    padding: 10px;
+}
+
+
+
+#details dl {
+    padding: 10px;
+    display: grid;
+}
+
+#details dt,
+#details dd {
+    display: inline;
+}
+
+#details dd {
+    padding-left: 10px;
+}
+
+
+
+#ingredients ul,
+#directions ol {
+    padding-left: 25px;
+}
+
+#ingredients ul li {
+    padding: 5px;
+}
+
+#directions ol li {
+    padding: 10px;
+}
+
+
+
+#appetizers {
+    background-color: #7ABFBF;
+}
+
+h3 {
+    padding: 5px;
+}
+
+#appetizers div {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#appetizers a {
+    color: #0d0d0d;
+    margin: 5px;
+    padding: 5px;
+    transition: background-color 1s;
+
+}
+
+#appetizers a:hover {
+    background-color: #EB5428;
+}
+
+#appetizers a img {
+    float: left;
+    width: 20%;
+
+    margin: 5px;
+    padding: 0;
+    margin-right: 20px;
+}
+
+#appetizers a figcaption {
+    margin-bottom: 10px;
+}
+
+#appetizers dt {
+    margin: 5px;
+}
+
+
+nav,
+footer {
+    background-color: #ffffff;
+    height: 70px;
+}
+
+nav h2,
+#search h2,
+footer h2,
+footer h3 {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 414px;
+    z-index: 1;
+}
+
+
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 35px 35px;
+    position: relative;
+    user-select: none;
+    z-index: 1;
+}
+
+nav label span {
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+
+}
+
+nav label span:before,
+nav label span:after {
+    background: none;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+
+}
+
+nav label span:before {
+    top: 5px;
+}
+
+nav label span:after {
+    top: -5px;
+}
+
+nav input {
+    display: none;
+}
+
+nav input:checked~ul {
+    max-height: 500px;
+}
+
+nav input:checked~nav label span {
+    background: transparent;
+}
+
+nav input:checked~nav label span:before {
+    transform: rotate(-45deg);
+}
+
+nav input:checked~nav label span:after {
+    transform: rotate(45deg);
+}
+
+nav input:checked~nav label:not(.steps) span:before,
+nav input:checked~nav label:not(.steps) nav span:after {
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav img {
+    visibility: hidden;
+    position: fixed;
+}
+
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    display: flex;
+}
+
+nav li {
+    background-color: #ffffff;
+    transition: background-color 1s;
+}
+
+nav li:hover {
+    background-color: #EB5428;
+    color: #ffffff;
+}
+
+nav a {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #EB5428;
+    padding: 15px;
+
+}
+
+nav li a:hover, nav li:last-of-type a:hover {
+    color: #ffffff;
+}
+
+nav li a svg:hover{
+    stroke: #ffffff;
+}
+
+nav li:first-of-type a,
+nav li:last-of-type a,
+nav ul li:nth-of-type(2) a {
+    color: #0d0d0d;
+    background-color: transparent;
+    padding: 5px;
+}
+
+nav ul li:first-of-type {
+    top: 0;
+    position: absolute;
+    width: 25%;
+}
+
+nav ul li:nth-of-type(2) {
+    top: 0;
+    left: 25%;
+    position: absolute;
+    background-color: #EB5428;
+    width: 50%;
+    height: 75px;
+}
+
+nav ul li:last-of-type {
+    top: 0;
+    left: 75%;
+    position: absolute;
+    width: 25%;
+}
+
+#search {
+    position: absolute;
+    top: 100px;
+    padding: 0 50px;
+    display: flex;
+    z-index: 0;
+    margin: auto;
+}
+
+#search input {
+    width: 250px;
+    border: solid 1px #EB5428;
+    border-right: none;
+}
+
+#search button {
+    border: solid 1px #EB5428;
+    border-left: none;
+    background-color: #EB5428;
+    padding: 0 5px;
+}
+
+#search button:hover {
+    background-color: #ffffff;
+}
+
+#search button svg:hover {
+    stroke: #EB5428;
+}
+
+
+
+footer {
+    padding-top: 50px;
+    background-color: #ffffff;
+    height: auto;
+    text-align: center;
+}
+
+#social ul a {
+    color: #EB5428;
+}
+
+footer img {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+
+/*ipad screen*/
+
+@media screen and (min-width:768px) {
+
+    body {
+        width: 768px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+
+
+    nav {
+        width: 768px;
+        height: 75px;
+    }
+
+
+    nav label,
+    nav label span,
+    nav input,
+    nav li:first-of-type {
+        display: none;
+    }
+
+    nav ul {
+        overflow: visible;
+        position: absolute;
+        max-height: initial;
+        top: 75px;
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+    }
+
+    nav img {
+        visibility: visible;
+        position: relative;
+        width: 75%;
+    }
+
+    nav li {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+    }
+
+    main {
+        margin-top: 200px;
+    }
+
+    nav ul li:nth-of-type(2),
+    nav ul li:last-of-type {
+        position: absolute;
+        top: -75px;
+    }
+
+    nav ul li:nth-of-type(2) {
+        left: 0;
+        width: 10%;
+    }
+
+    nav ul li:last-of-type {
+        left: 90%;
+        width: 10%;
+    }
+
+
+
+    #tacos menu {
+        background-color: rgba(255, 255, 255, .7);
+        z-index: 1;
+        position: relative;
+        top: 100px;
+        height: 100px;
+        margin-top: -100px
+    }
+
+    #tacos menu li {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+
+
+
+    #details dl {
+        text-align: center;
+    }
+
+
+
+    .ipadGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #ingredients {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #directions {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+
+
+    #appetizers div {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: initial;
+    }
+
+
+
+    #search {
+        z-index: 1;
+        position: absolute;
+        top: 10px;
+        left: 350px;
+    }
+
+
+
+    footer {
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #copyright {
+        flex: 40%;
+
+    }
+
+    #social {
+        margin: 25px;
+    }
+}
+
+/*desktop screen 1280*/
+
+@media screen and (min-width:1300px) {
+
+    body {
+        width: 1280px;
+
+    }
+
+
+
+    nav {
+        width: 1280px;
+        height: 125px;
+    }
+
+    nav ul {
+        width: 768px;
+        top: 0;
+        left: 250px;
+    }
+
+    nav li a {
+        height: 125px;
+    }
+
+    nav ul li:nth-of-type(2),
+    nav ul li:last-of-type {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 125px;
+
+    }
+
+    nav ul li:nth-of-type(2) {
+        left: -250px;
+
+    }
+
+    nav ul li:last-of-type {
+        left: 925px;
+    }
+
+
+
+    #tacos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    h1 {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #tacos menu {
+        position: initial;
+        background-color: transparent;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #tacomenu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #tacomenu menu {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top: 150px;
+        margin-left: 25px;
+    }
+
+  #tacomenu menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      margin-top: auto;
+      margin-left: auto;
+      height: 100%;
+      width: 9%;
+      background-color: white;
+      border: solid 1px #EB5428;
+  }
+
+
+
+
+    #tacomenu img {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    #tacos #about {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        line-height: 2em;
+    }
+
+
+
+    #details {
+        background-color: #0d0d0d;
+        color: #7ABFBF;
+    }
+
+    #details dl {
+        display: flex;
+        flex: auto;
+        justify-content: center;
+    }
+
+    #details div {
+        flex: auto;
+    }
+
+    #details dt,
+    #details dd {
+        display: block;
+    }
+
+
+
+    .ipadGrid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #ingredients {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #directions {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    #appetizers div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    #appetizers a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #appetizers a img {
+        float: none;
+        width: 100%;
+    }
+
+    #appetizers dt,
+    #appetizers dd {
+        display: inline;
+    }
+
+
+
+    #search {
+        top: 150px;
+        left: 500px
+    }
+
+    #copyright {
+        display: flex;
+    }
+
+    #copyright img {
+        width: 25%;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    #copyright small {
+        margin-top: 25px;
+    }
+
+    #social li {
+        margin: 15px 25px;
+    }
+}
+

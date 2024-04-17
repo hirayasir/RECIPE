@@ -1,0 +1,56 @@
+@media print {
+
+    html {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    body {
+        margin: 0.5in;
+        height: 100%;
+        overflow: hidden;
+    }
+    #direct-grid {
+        page-break-before:avoid;
+    }
+    h1, h2 {
+        text-transform: capitalize;
+    }
+    p span {
+        padding-right: 10px;
+    }
+    nav {
+        display: none;
+    }
+    form {
+        display: none;
+    }
+    
+    figcaption {
+        display: none;
+    }
+    
+    #ingredients {
+        display: none;
+    }
+    
+    #directions {
+        display: none;
+    }
+    #side-dishes {
+        display: none;
+    }
+    
+    #socials {
+        display: none;
+    }
+    a[href*="://"]::after,
+    a:not([href^="/"])::after
+    {
+      content:" (" attr(href) ")";
+      color: #000040;
+    }
+    
+    img {
+        display: none;
+    }
+    }
