@@ -1,56 +1,65 @@
 @media print {
-
+   
     html {
         font-family: Georgia, 'Times New Roman', Times, serif;
-    
+        text-align: center;
+        
     }
+
     body {
-        margin: 0.5in;
+        margin: 1in;
         height: 100%;
         overflow: hidden;
     }
-    #direct-grid {
-        page-break-before:avoid;
+    h1 {
+        text-align: center;
     }
-    h1, h2 {
+    #direct-grid {
+        page-break-before: avoid;
+    }
+
+    h1,
+    h2 {
         text-transform: capitalize;
     }
+
     p span {
         padding-right: 10px;
     }
-    nav {
+
+    nav,
+    form,
+    figcaption,
+    #ingredients,
+    #directions,
+    #side-dishes,
+    #socials,
+    img,
+    ul {
         display: none;
     }
-    form {
-        display: none;
-    }
-    
-    figcaption {
-        display: none;
-    }
-    
-    #ingredients {
-        display: none;
-    }
-    
-    #directions {
-        display: none;
-    }
-    #side-dishes {
-        display: none;
-    }
-    
-    #socials {
-        display: none;
-    }
+
     a[href*="://"]::after,
-    a:not([href^="/"])::after
-    {
-      content:" (" attr(href) ")";
-      color: #000040;
+    a:not([href^="/"])::after {
+        content: " (" attr(href) ")";
+        color: #000040;
     }
-    
-    img {
-        display: none;
-    }
-    }
+}
+
+#site-search {
+    display: none;
+}
+
+.icon icon-tabler icon-tabler-search {
+  display: none;
+  
+}
+
+#social menu li {
+    list-style: none;
+}
+
+
+#tacomenu menu li {
+    list-style: none;
+}
