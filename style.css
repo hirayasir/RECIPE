@@ -125,15 +125,15 @@ h1, h2, h3 {
     text-align: center;
 }
 
+
 a {
     text-decoration: none;
 }
 
-
-/*Mobile Screens*/
+/*Mobile Screens 414px*/
 
 @media only screen and (max-width: 414px) {
-  
+
 }
 
 h1 {
@@ -143,6 +143,12 @@ h1 {
 menu, nav, ul {
     list-style: none;
 }
+
+
+.with-bullets {
+    list-style: disc; 
+}
+
 
 menu {
     display: flex;
@@ -462,7 +468,7 @@ footer img {
 
 
 
-/*ipad screen*/
+/*ipad screen 768px*/
 
 @media screen and (min-width:768px) {
 
@@ -611,9 +617,9 @@ footer img {
     }
 }
 
-/*desktop screen 1280*/
+/*Desktop Screen 1280px*/
 
-@media screen and (min-width:1300px) {
+@media screen and (min-width:1280px) {
 
     body {
         width: 1280px;
@@ -801,4 +807,3 @@ footer img {
         margin: 15px 25px;
     }
 }
-
